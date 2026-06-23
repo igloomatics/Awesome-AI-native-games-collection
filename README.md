@@ -1,9 +1,9 @@
-# Awesome-AI-native-games-collection
+# 🎮 Awesome-AI-native-games-collection   AI 原生游戏精选合集
 
-<a id="top"></a>
 
-> A curated, hand-verified catalog of **AI-native video games** — titles where generative AI is (or borders on being) the core mechanic — with a two-axis taxonomy of *game type* and *AI play mechanic*.
-> AI原生游戏 收藏库
+> A curated, hand-verified catalog of **AI-native video games** — titles where generative AI is (or borders on being) the core mechanic — classified on two axes: *game type* and *AI play mechanic*.
+>
+>  **AI 原生游戏精选合集** —— 收录生成式 AI 构成(或逼近)核心机制的游戏,并按"**传统游戏类型 × AI 主玩法机制**"双轴分类。
 
 ![games](https://img.shields.io/badge/games-94-1f6feb)
 ![native](https://img.shields.io/badge/AI%20Native-71-2ea44f)
@@ -14,53 +14,55 @@
 
 ---
 
-## Contents
-- [About](#about)
-- [At a glance](#glance)
-- [Taxonomy](#taxonomy)
-- [Corpus](#corpus) — [🟢 Native](#native) · [🔵 Augmented](#augmented) · [🟠 Boundary](#boundary)
-- [Column guide](#columns)
-- [Methodology](#method)
-- [Repository files](#files)
-- [Contributing](#contributing)
-- [Citation](#cite)
-- [License](#license)
+## Contents / 目录
+- [About / 关于](#about)
+- [At a glance / 数据概览](#glance)
+- [Taxonomy / 分类体系](#taxonomy)
+- [Corpus / 游戏清单](#corpus) — [🟢 Native](#native) · [🔵 Augmented](#augmented) · [🟠 Boundary](#boundary)
+- [Column guide / 字段说明](#columns)
+- [Methodology / 方法](#method)
+- [Repository files / 仓库文件](#files)
+- [Contributing / 参与贡献](#contributing)
+- [Citation / 引用](#cite)
+- [License / 许可](#license)
 
 ---
 
 <a id="about"></a>
-## 📖 About
+## 📖 About / 关于
 
-This repository collects **94 games** that use generative AI (LLMs, diffusion models, agents) at runtime, screened and classified by hand. Each title is placed on two independent axes — a **traditional game-type axis (G)** and an **AI play-mechanic axis (N)** — and assigned an **eligibility tier** (Native / Augmented / Boundary). The goal is to map *which traditional genres naturally host which AI-native mechanics*, and to separate true AI-native games from AI-decorated or not-quite-a-game artifacts.
+This repository collects **94 games** that use generative AI (LLMs, diffusion models, agents) at runtime, screened and classified by hand. Each title is placed on two independent axes — a **traditional game-type axis (G)** and an **AI play-mechanic axis (N)** — and assigned an **eligibility tier** (Native / Augmented / Boundary). The aim is to map *which traditional genres naturally host which AI-native mechanics*, and to separate true AI-native games from AI-decorated or not-quite-a-game artifacts.
+
+本仓库收录 **94 款**在运行时使用生成式 AI(大语言模型、扩散模型、智能体)的游戏,全部人工筛选与分类。每款游戏被放在两条独立的轴上 —— **传统游戏类型轴(G)** 与 **AI 主玩法机制轴(N)**,并给出**资格分级**(Native / Augmented / Boundary)。目标是厘清"**哪些传统品类天然适合承载哪种 AI 原生机制**",并把真正的 AI 原生游戏与"AI 只做点缀"或"算不上游戏"的作品区分开。
 
 <a id="glance"></a>
-## 📊 At a glance
+## 📊 At a glance / 数据概览
 
-| Tier | Count | Meaning |
+| Tier / 分级 | Count | Meaning / 含义 |
 |------|:--:|------|
-| 🟢 **AI Native** | 71 | Generative AI **is** the core loop; remove it and the game collapses. |
-| 🔵 **AI Augmented** | 13 | Generative AI present but **not** core; a few humans / presets could replace it. |
-| 🟠 **AI Boundary** | 10 | AI clearly central, but it **lacks rules/goals** to count as a strict game. |
+| 🟢 **AI Native** | 71 | Generative AI **is** the core loop; remove it and the game collapses. ｜ 生成式 AI 构成核心机制,移除即坍塌。 |
+| 🔵 **AI Augmented** | 13 | AI present but **not** core; a few humans/presets could replace it. ｜ 有 AI 但非核心,有限人类/预设可替代。 |
+| 🟠 **AI Boundary** | 10 | AI clearly central, but **lacks rules/goals** to be a strict game. ｜ AI 是核心,但缺规则/目标,不算严格游戏。 |
 
-**By game type (Native):** G1 (36) · G2 (12) · G3 (7) · G5 (6) · G7 (3) · G9 (3) · G6 (2) · G4 (1) · G8 (1)
-
-**By AI mechanic (Native):** N1 (23) · N3 (22) · N2 (12) · N4 (7) · N5 (6) · N6 (1)
-
-**By year (all):** 2022 (3) · 2023 (9) · 2024 (20) · 2025 (15) · 2026 (23) · TBA (23)
+- **By game type (Native) / 按游戏类型:** G1 (36) · G2 (12) · G3 (7) · G5 (6) · G7 (3) · G9 (3) · G6 (2) · G4 (1) · G8 (1)
+- **By AI mechanic (Native) / 按 AI 机制:** N1 (23) · N3 (22) · N2 (12) · N4 (7) · N5 (6) · N6 (1)
+- **By year (all) / 按年份:** 2022 (3) · 2023 (9) · 2024 (20) · 2025 (15) · 2026 (23) · TBA (23)
 
 <a id="taxonomy"></a>
-## 🗂️ Taxonomy
+## 🗂️ Taxonomy / 分类体系
 
-**Axis G — traditional game type**
-`G1` Narrative adventure · `G2` RPG · `G3` Puzzle · `G4` Strategy/management · `G5` Simulation · `G6` Sandbox/creation · `G7` Party/social · `G8` Relationship/companion · `G9` Experimental/hybrid
+**Axis G — traditional game type / 传统游戏类型**
+`G1` Narrative adventure 叙事冒险 · `G2` RPG 角色扮演 · `G3` Puzzle 解谜 · `G4` Strategy/management 策略经营 · `G5` Simulation 模拟 · `G6` Sandbox/creation 沙盒创造 · `G7` Party/social 社交派对 · `G8` Relationship/companion 关系陪伴 · `G9` Experimental/hybrid 实验混合
 
-**Axis N — AI play mechanic (what the player does *through* the AI)**
-`N1` Epistemic / information-gathering · `N2` Social influence · `N3` Generative narrative / AI GM · `N4` Semantic mechanic (AI-as-environment) · `N5` Agentic simulation · `N6` Generative artifact as gameplay · `—` AI not the main mechanic
+**Axis N — AI play mechanic / AI 主玩法(玩家"通过 AI"做什么)**
+`N1` Epistemic / info-gathering 信息获取 · `N2` Social influence 社交操纵 · `N3` Generative narrative / AI GM 生成叙事 · `N4` Semantic mechanic (AI-as-environment) 语义机制 · `N5` Agentic simulation 多 Agent 模拟 · `N6` Generative artifact as gameplay 生成物即玩法 · `—` not AI-driven 非 AI 主导
 
-> The two axes are orthogonal: e.g. a detective game is *type* `G1` (narrative) but *mechanic* `N1` (you interrogate an AI to extract hidden truth). "Detective" is a theme, not a mechanic.
+> The two axes are orthogonal: a detective game is *type* `G1` (narrative) but *mechanic* `N1` (interrogating an AI to extract hidden truth). "Detective" is a theme, not a mechanic.
+>
+> 两轴正交:侦探游戏在**类型**上是 `G1`(叙事),在**机制**上是 `N1`(审问 AI 套出隐藏信息)。"侦探"是题材,不是机制。
 
 <a id="corpus"></a>
-## 📋 Corpus
+## 📋 Corpus / 游戏清单
 
 <a id="native"></a>
 ### 🟢 AI Native (71)
@@ -175,34 +177,36 @@ This repository collects **94 games** that use generative AI (LLMs, diffusion mo
 | 10 | [Never Ending Dungeon](https://store.steampowered.com/app/4124130/Never_Ending_Dungeon/) | TBA | G6 沙盒/创造 | N3 生成叙事/AI GM | Announced/TBA | AI 桌游/地牢生成器：帮你（或主持人）现生成冒险、地图、NPC、敌人、陷阱和房间，更像生成工具。 |
 
 <a id="columns"></a>
-## 🧭 Column guide
-- **Game** — title, linked to its store / project / paper page.
-- **Year** — release year; `TBA` = announced but undated.
-- **Type (G)** / **AI mechanic (N)** — the two taxonomy axes above.
-- **Status** — Released · Early Access · Announced/TBA · Demo/Playtest · Research prototype · Delisted.
-- **Gameplay** — one-line plain-language description of how it plays.
+## 🧭 Column guide / 字段说明
+- **Game / 游戏** — title linked to its store / project / paper page. ｜ 游戏名,链接到商店/项目/论文页。
+- **Year / 年份** — release year; `TBA` = announced but undated. ｜ 发行年份;`TBA` 为已公布但无确定日期。
+- **Type (G) / AI mechanic (N)** — the two taxonomy axes above. ｜ 上述两条分类轴。
+- **Status / 状态** — Released · Early Access · Announced/TBA · Demo/Playtest · Research prototype · Delisted. ｜ 已发售·抢先体验·待发行·试玩·研究原型·已下架。
+- **Gameplay / 玩法简介** — one-line plain description of how it plays. ｜ 一句话大白话玩法。
 
 <a id="method"></a>
-## 🔬 Methodology
-1. **Screen** for runtime generative AI (not dev-time-only assistance).
-2. **Eligibility** via two tests — *is the AI the core mechanic?* (Native vs Augmented) and *is it a strict game with rules/goals?* (Native vs Boundary). A title is **Augmented** if a limited number of humans or fixed presets could replace the AI.
-3. **Classify** independently on axes G and N (single primary value each).
-4. **Verify** release status and titles against official store / project pages.
+## 🔬 Methodology / 方法
+1. **Screen** for runtime generative AI (not dev-time-only assistance). ｜ 筛选运行时使用生成式 AI 的作品(排除仅开发期辅助)。
+2. **Eligibility** via two tests — *is AI the core mechanic?* (Native vs Augmented) and *is it a strict game with rules/goals?* (Native vs Boundary). A title is **Augmented** if a few humans or fixed presets could replace the AI. ｜ 两道判据:*AI 是否核心机制?*(Native↔Augmented)与 *是否有规则/目标的严格游戏?*(Native↔Boundary);若有限人类或固定预设即可替代 AI,则判 Augmented。
+3. **Classify** independently on axes G and N (one primary value each). ｜ 在 G、N 两轴上各取一个主类。
+4. **Verify** release status and titles against official store / project pages. ｜ 对照官方商店/项目页核实状态与名称。
 
 <a id="files"></a>
-## 🗃️ Repository files
-- `README.md` — this catalog.
-- `AI_Native_Games_筛选结果.xlsx` — full spreadsheet (judgement columns, evidence, sources, original notes).
+## 🗃️ Repository files / 仓库文件
+- `README.md` — this catalog. ｜ 本清单。
+- `AI_Native_Games_筛选结果.xlsx` — full spreadsheet (judgement columns, evidence, sources, original notes). ｜ 完整表格(判定列、证据、来源、原始批注)。
 
 <a id="contributing"></a>
-## 🤝 Contributing
-Found a missing game, a wrong status, or a mis-classification? Open an **issue** or a **pull request** with: title, link, release year, a one-line gameplay description, and (if you can) your suggested G / N / tier with a one-sentence reason.
+## 🤝 Contributing / 参与贡献
+Found a missing game, a wrong status, or a mis-classification? Open an **issue** or **pull request** with: title, link, release year, a one-line gameplay description, and (optionally) your suggested G / N / tier with a one-sentence reason.
+
+发现遗漏的游戏、状态有误或分类不当?欢迎提 **issue** 或 **PR**,附上:游戏名、链接、发行年份、一句话玩法,以及(可选)你建议的 G / N / 分级和一句理由。
 
 <a id="cite"></a>
-## 📑 Citation
+## 📑 Citation / 引用
 ```bibtex
-@misc{ai_native_games_corpus,
-  title  = {AI-Native Games Corpus},
+@misc{Awesome-AI-native-games-collection,
+  title  = {Awesome-AI-native-games-collection},
   year   = {2026},
   note   = {A hand-verified catalog of AI-native games with a game-type x AI-mechanic taxonomy},
   howpublished = {GitHub repository}
@@ -210,7 +214,10 @@ Found a missing game, a wrong status, or a mis-classification? Open an **issue**
 ```
 
 <a id="license"></a>
-## ⚖️ License
-Data and text released under **CC BY 4.0** — reuse with attribution. Game names, links, and media belong to their respective owners.
+## ⚖️ License / 许可
+Data and text are released under **CC BY 4.0** — reuse with attribution. Game names, links, and media belong to their respective owners.
 
-<sub>[↑ back to top](#top)</sub>
+数据与文字以 **CC BY 4.0** 发布 —— 署名即可复用。游戏名称、链接与素材版权归各自所有者。
+
+<sub>[↑ back to top / 返回顶部](#top)</sub>
+
