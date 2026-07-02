@@ -33,9 +33,9 @@
 <a id="about"></a>
 ## 📖 About / 关于
 
-This repository collects **98 games** that use generative AI (LLMs, diffusion models, agents) at runtime, screened and classified by hand. Each title is placed on two independent axes — a **traditional game-type axis (G)** and an **AI play-mechanic axis (N)** — and assigned an **eligibility tier** (Native / Augmented / Boundary). The aim is to map *which traditional genres naturally host which AI-native mechanics*, while also documenting excellent adjacent designs that use generative AI in different but still meaningful ways.
+This repository collects **98 games** that use generative AI (LLMs, diffusion models, agents) at runtime, screened and classified. Each title is placed on two independent axes — a **traditional game-type axis (G)** and an **AI play-mechanic axis (N)** — and assigned an **eligibility tier** (Native / Augmented / Boundary). The aim is to map *which traditional genres naturally host which AI-native mechanics*, while also documenting excellent adjacent designs that use generative AI in different but still meaningful ways.
 
-本仓库收录 **98 款**在运行时使用生成式 AI(大语言模型、扩散模型、智能体)的游戏,全部人工筛选与分类。每款游戏被放在两条独立的轴上 —— **传统游戏类型轴(G)** 与 **AI 主玩法机制轴(N)**,并给出**资格分级**(Native / Augmented / Boundary)。目标是厘清"**哪些传统品类天然适合承载哪种 AI 原生机制**",同时记录那些以不同方式精彩使用生成式 AI 的相邻设计。
+本仓库收录 **98 款**在运行时使用生成式 AI(大语言模型、扩散模型、智能体)的游戏,全部筛选与分类。每款游戏被放在两条独立的轴上 —— **传统游戏类型轴(G)** 与 **AI 主玩法机制轴(N)**,并给出**资格分级**(Native / Augmented / Boundary)。目标是厘清"**哪些传统品类天然适合承载哪种 AI 原生机制**",同时记录那些以不同方式精彩使用生成式 AI 的相邻设计。
 
 <a id="scope"></a>
 ## 🧩 Scope note / 范围说明
